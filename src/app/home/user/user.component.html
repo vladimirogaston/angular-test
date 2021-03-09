@@ -1,0 +1,18 @@
+<mat-card>
+  <mat-card-title>{{ user.name }} {{user.surname}}</mat-card-title>
+  <mat-card-content>
+    <div>
+      <span>Gender:</span>{{ user.gender }}
+    </div>
+    <div>
+      <span>Dni:</span>{{ user.dni }}
+    </div>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button
+            color="primary"
+            (click)="onDelete()">
+      delete
+    </button>
+  </mat-card-actions>
+</mat-card>
